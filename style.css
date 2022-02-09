@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Montserrat:wght@200&display=swap');
+
+h1,h2,h3,h4,h5,h6,p,label{
+    font-family: Montserrat;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 0.2fr 1.2fr;
+    grid-template-areas: "area1 area1 area1"
+                            "area2 area3 area3"
+                            "area4 area3 area3"
+                            "area4 area5 area5"
+                            "area6 area6 area6"
+                            "area7 area8 area9";
+    width: 90%;
+    margin: 0 auto;
+    background: #F2F2F2;
+    grid-gap: 20px;
+}
+
+section{
+    background-color: white;
+    border-radius: 12px;
+}
+
+section:nth-child(1){
+    grid-area: area1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 311px;
+    margin-top: 5%;
+}
+
+section:nth-child(1) > div:nth-child(1){
+   display: flex;
+   width: 30%;
+}
+
+section:nth-child(1)  h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F4F4F;
+}
+
+section:nth-child(1) > div:nth-child(2){
+   /* display: flex; */
+   width: 70%;
+   height: 100%;
+   padding: 0 20px;
+}
+
+section:nth-child(1) > div:nth-child(2)> main:nth-child(1){
+   display: flex;
+   /* width: 80%; */
+   justify-content: space-between;
+   height: 40%;
+}
+
+section:nth-child(1) > div:nth-child(2)> main:nth-child(1) p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+
+
+section:nth-child(1) > div:nth-child(2)> main:nth-child(2){
+   display: flex;
+   /* width: 80%; */
+   justify-content: space-between;
+   height: 60%;
+   align-items: center;
+}
+
+section:nth-child(1) > div:nth-child(2)> main:nth-child(2){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+
+section:nth-child(1) > div:nth-child(1) img{
+   width: 100%;
+   border-radius: 12px;
+}
+
+section:nth-child(2){
+    grid-area: area2;
+    height: 303px;
+    width: 100%;
+    padding: 5% 10%;
+}
+
+section:nth-child(2) h3{
+    padding: 10px 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #4F4F4F;
+}
+
+section:nth-child(2) > div{
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+}
+
+section:nth-child(2) > div{
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+}
+
+section:nth-child(2) > div > span{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+section:nth-child(2) > div > span > meter{
+    /* display: flex; */
+    width: 50%;
+    color: #2F80ED;
+    border-radius: 12px; 
+}
+
+
+section:nth-child(2) > div > span > label{
+    /* display: flex; */
+    width: 40%;
+
+}
+
+
+section:nth-child(3){
+    grid-area: area3;
+    padding: 20px 20px;
+    /* height: 311px; */
+    width: 100%;
+}
+
+section:nth-child(3) > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    width: 90%;
+}
+
+section:nth-child(3) > div:nth-child(1) > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+section:nth-child(3) > div:nth-child(1) > div:nth-child(1) p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E0E0E0;
+}
+
+section:nth-child(3) > div:nth-child(1) > div:nth-child(1) h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+section:nth-child(3) > div:nth-child(2){
+    /* font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20%;
+}
+
+section:nth-child(3) > div:nth-child(1) > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+}
+
+section:nth-child(3) img{
+    width: 396px;
+    height: 321px;
+    position: absolute;
+    left: 20%;
+}
+
+section:nth-child(4){
+    grid-area: area4;
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section:nth-child(4) h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F4F4F;
+    padding: 5% 0;
+}
+
+section:nth-child(4) > div{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section:nth-child(4) img{
+    width: 100%;
+    height: 60%;
+    border-radius: 12px;
+}
+
+section:nth-child(5){
+    grid-area: area5;
+}
+
+section:nth-child(5) h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4F4F4F;
+    padding: 10px 20px;
+}
+
+section:nth-child(5) > div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    height: 40%;
+}
+
+section:nth-child(5) > div > img{
+    /* display: flex;
+    justify-content: space-between;
+    height: 40%; */
+    padding: 10px 10px;
+    width: 20%;
+}
+
+section:nth-child(5) > div > div{
+    /* display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    height: 40%; */
+    width: 80%;
+}
+section:nth-child(5) > div > div p:nth-of-type(1){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+section:nth-child(5) > div > div p:nth-of-type(2){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
+section:nth-child(5) > div > div h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+section:nth-child(5) > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding: 50px 50px; */
+    height: 100%;
+}
+
+section:nth-child(5) img{
+    width: 119.25px;
+    height: 84px;
+}
+
+section:nth-child(6){
+    grid-area: area6;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+section:nth-child(6) h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4F4F4F;
+}
+
+section:nth-child(6) span{
+   display: flex;
+   justify-content: space-between;
+   width: 20%;
+}
+
+section:nth-child(6) span p{
+    border: 1px solid #4F4F4F;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #4F4F4F;
+}
+
+section:nth-child(6) span p:nth-of-type(3){
+    background: #2F80ED;
+    border: 1px solid #2F80ED;
+    box-sizing: border-box;
+    border-radius: 12px;
+    color: white;
+}
+
+section:nth-child(7){
+    grid-area: area7;
+    margin-bottom: 10%;
+}
+
+section:nth-child(7) > div, section:nth-child(8) > div, section:nth-child(9) > div{
+    padding: 5% 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section:nth-child(7) > div > div:nth-child(2), section:nth-child(8) > div > div:nth-child(2), section:nth-child(9) > div > div:nth-child(2){
+    /* padding: 5% 10%; */
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section:nth-child(7) > div > div:nth-child(2) > p:nth-of-type(1), section:nth-child(8) > div > div:nth-child(2) > p:nth-of-type(1), section:nth-child(9) > div > div:nth-child(2) > p:nth-of-type(1){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
+
+section:nth-child(7) > div > div:nth-child(2) > h3, section:nth-child(8) > div > div:nth-child(2) > h3, section:nth-child(9) > div > div:nth-child(2) > h3{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+
+section:nth-child(7) > div > div:nth-child(2) > p:nth-of-type(2), section:nth-child(8) > div > div:nth-child(2) > p:nth-of-type(2), section:nth-child(9) > div > div:nth-child(2) > p:nth-of-type(2){
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+
+section:nth-child(7) span:nth-of-type(1), section:nth-child(8) span:nth-of-type(1), section:nth-child(9) span:nth-of-type(1){
+    background: #2F80ED;
+    border-radius: 12px;
+    color: white;
+    padding: 5px 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+section:nth-child(7) span:nth-of-type(2), section:nth-child(8) span:nth-of-type(2), section:nth-child(9) span:nth-of-type(2){
+    border: 1px solid #2F80ED;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 5px 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2F80ED;
+}
+
+
+section:nth-child(7) img, section:nth-child(8) img, section:nth-child(9) img{
+    /* grid-area: area7; */
+    width: 100%;
+    height: 40%;
+    border-radius: 12px;
+}
+
+section:nth-child(8){
+    grid-area: area8;
+    margin-bottom: 10%;
+}
+
+section:nth-child(9){
+    grid-area: area9;
+    margin-bottom: 10%;
+}
+
+
+/* section:nth-child(1){
+    grid-area: "area1";
+} */
